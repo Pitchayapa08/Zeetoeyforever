@@ -1,0 +1,433 @@
+/* ========================================
+   1. IMPORT FONT
+======================================== */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
+
+/* ========================================
+   2. RESET
+======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Prompt', sans-serif;
+    background: #fff8fc;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* ========================================
+   3. NAVBAR
+======================================== */
+.navbar {
+    background: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    box-shadow: 0 3px 15px #00000010;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #d946a6;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #d946a6;
+}
+
+/* ========================================
+   4. HERO SECTION
+======================================== */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #fbcfe8, #e9d5ff);
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #9d174d;
+    font-weight: 700;
+}
+
+.hero p {
+    margin: 12px 0;
+    color: #6b2148;
+}
+
+.hero-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 35px 0;
+    flex-wrap: wrap;
+}
+
+.hero-images img {
+    width: 220px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 25px;
+    border: 5px solid white;
+    box-shadow: 0 8px 25px #00000020;
+    transition: 0.4s;
+}
+
+.hero-images img:hover {
+    transform: scale(1.05);
+}
+
+/* ปุ่ม */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #db2777;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #9d174d;
+    transform: translateY(-3px);
+}
+
+/* ========================================
+   5. SECTION
+======================================== */
+.section {
+    padding: 80px 10%;
+}
+
+.section h2 {
+    text-align: center;
+    color: #be185d;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.subtitle {
+    text-align: center;
+    color: #888;
+    margin: 10px 0 40px;
+}
+
+/* ========================================
+   6. PROFILE
+======================================== */
+.profile-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.profile-card {
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 5px 20px #00000010;
+    transition: 0.4s;
+}
+
+.profile-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px #d946a630;
+}
+
+.profile-card img {
+    width: 180px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-card h3 {
+    color: #db2777;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.role {
+    color: #9333ea;
+    margin-bottom: 15px;
+}
+
+/* ========================================
+   7. EDUCATION
+======================================== */
+.education {
+    background: #fce7f3;
+}
+
+.education-card {
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    box-shadow: 0 5px 20px #00000010;
+}
+
+.education-card img {
+    width: 220px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.education-card h3 {
+    color: #be185d;
+    margin-bottom: 10px;
+}
+
+/* ========================================
+   8. PROJECT GALLERY
+======================================== */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.work-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px #00000010;
+    transition: 0.4s;
+}
+
+.work-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px #d946a630;
+}
+
+.work-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.work-card h3 {
+    color: #be185d;
+    padding: 15px 20px 5px;
+    font-size: 18px;
+}
+
+.work-card p {
+    padding: 0 20px 20px;
+    color: #777;
+    font-size: 14px;
+}
+
+/* ========================================
+   9. ACTIVITIES
+======================================== */
+.activities {
+    background: #fce7f3;
+}
+
+/* ========================================
+   10. SKILLS
+======================================== */
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background: #fce7f3;
+    color: #be185d;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background: #db2777;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* ========================================
+   11. FOOTER
+======================================== */
+footer {
+    background: #831843;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+footer h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* ========================================
+   12. BACK TO TOP BUTTON
+======================================== */
+#topBtn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    border: none;
+    background: #db2777;
+    color: white;
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 5px 15px #00000030;
+    transition: 0.3s;
+}
+
+#topBtn:hover {
+    background: #831843;
+    transform: translateY(-5px);
+}
+
+/* ========================================
+   13. ANIMATION
+======================================== */
+.profile-card,
+.work-card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.profile-card.show,
+.work-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ========================================
+   14. RESPONSIVE TABLET
+======================================== */
+@media (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+}
+
+/* ========================================
+   15. RESPONSIVE MOBILE
+======================================== */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero {
+        padding: 70px 15px;
+    }
+
+    .hero-images img {
+        width: 160px;
+        height: 210px;
+    }
+
+    .profile-container {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 50px 6%;
+    }
+
+    .section h2 {
+        font-size: 26px;
+    }
+
+    .education-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .education-card img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .menu {
+        gap: 12px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+}
+
+/* ========================================
+   16. SMALL MOBILE
+======================================== */
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero-images img {
+        width: 130px;
+        height: 180px;
+    }
+
+    .profile-card {
+        padding: 20px;
+    }
+
+    .work-card img {
+        height: 180px;
+    }
+}
